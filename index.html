@@ -3,110 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhanuka Perera - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .login-container .register {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container .register a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login-container .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Dhanuka Perera - Lecturer & Researcher in Entrepreneurship</h1>
-    </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#research">Research & Publications</a>
-        <a href="#teaching">Teaching & Courses</a>
-        <a href="#projects">Projects & Contributions</a>
-        <a href="#awards">Awards & Achievements</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
 
-    <div class="hero">
-        <h2>Inspiring and empowering individuals through a culture of optimism and growth.</h2>
-        <a href="#contact" class="cta-button">Explore My Work</a>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+            <div class="register">
+                <p>Don't have an account? <a href="#">Register here</a></p>
+            </div>
+        </form>
     </div>
 
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hi, I'm Dhanuka Perera, a Lecturer (Probationary) at the Department of Entrepreneurship, University of Sri Jayewardenepura. My mission is to guide individuals in unlocking their full potential, promoting self-reliance, and fostering personal growth through support and encouragement. I hold an MSc in Management and have extensive experience in teaching and research related to entrepreneurship, ICT adoption, and SME performance.</p>
-        </section>
-
-        <section id="research" class="section">
-            <h2>Research & Publications</h2>
-            <div class="card">
-                <h3>Entrepreneurial Bricolage in SMEs</h3>
-                <p>Exploring the interplay of divergent thinking, self-efficacy, and gender dynamics. Awarded Best Paper in Entrepreneurial Leadership at ICBM 2024.</p>
-            </div>
-            <div class="card">
-                <h3>Technology Organization Environment Framework</h3>
-                <p>An empirical investigation on ICT adoption of SMEs in Sri Lanka, published in the Journal of Integrated Marketing Communications and Digital Marketing.</p>
-            </div>
-            <div class="card">
-                <h3>Information and Communication Technology Adoption Models</h3>
-                <p>Published in the Sri Lanka Journal of Entrepreneurship, this work provides a literature review on ICT adoption models in SMEs. (Volume 2, Issue 2, pp 10-28)</p>
-            </div>
-            <div class="card">
-                <h3>Relationship between the Antecedents of ICT Adoption and Business Performance</h3>
-                <p>Published in the Sri Lankan Journal of Entrepreneurship, exploring the relationship between ICT adoption and business performance in SMEs. (Volume 2, Issue 1, pp 39-48)</p>
-            </div>
-        </section>
-
-        <section id="teaching" class="section">
-            <h2>Teaching & Courses</h2>
-            <div class="card">
-                <h3>Corporate Entrepreneurship</h3>
-                <p>A course designed to introduce students to the dynamics of entrepreneurial activities within established organizations.</p>
-            </div>
-            <div class="card">
-                <h3>Fundamentals in Business Planning</h3>
-                <p>Helping students develop comprehensive business plans, preparing them for the real-world challenges of entrepreneurship.</p>
-            </div>
-            <div class="card">
-                <h3>Introduction to Entrepreneurship</h3>
-                <p>Introducing students to fundamental concepts in entrepreneurship, taught at the Faculty of Technology, USJ.</p>
-            </div>
-            <div class="card">
-                <h3>Economics for Entrepreneurs</h3>
-                <p>Covering economic concepts that are critical for entrepreneurs, part of the Diploma in Entrepreneurial Business Management at University of Sri Jayewardenepura.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects & Contributions</h2>
-            <div class="card">
-                <h3>Heta Lowata Diriyak CSR Program</h3>
-                <p>Coordinated the Heta Lowata Diriyak CSR Program, which aimed to empower underprivileged communities through entrepreneurship initiatives.</p>
-            </div>
-            <div class="card">
-                <h3>SECRA Project</h3>
-                <p>Participated in the SECRA Project funded by Erasmus+, contributing to strengthening university-enterprise collaboration in Asia. Presented WP5 in Thailand and Sweden conferences, and was an organizing committee member for various project events.</p>
-            </div>
-            <div class="card">
-                <h3>Market Survey Project - Ministry of Trade</h3>
-                <p>Successfully completed a market survey analyzing the impact of the price stabilization strategy of 27 essential goods for the Ministry of Trade, Commerce and Food Security in Sri Lanka.</p>
-            </div>
-        </section>
-
-        <section id="awards" class="section awards-section">
-            <h2>Awards & Achievements</h2>
-            <p>Best Paper Award in the Entrepreneurial Leadership in Sustainable SMEs track at the 20th International Conference on Business Management (ICBM 2024).</p>
-            <p>Gold Medal for Highest GPA in Bachelor of Science in Entrepreneurship at University of Sri Jayewardenepura.</p>
-            <p>Organizing Committee Member of the International Conference on Business Management (ICBM) in 2021 and 2024.</p>
-            <p>Designed the Official Logo for the Faculty of Management Studies and Commerce, University of Sri Jayewardenepura (2024).</p>
-        </section>
-
-        <section id="contact" class="section contact-info">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:dhanukaprr@sjp.ac.lk">dhanukaprr@sjp.ac.lk</a></p>
-            <p>Phone: +94 77 917 5075</p>
-            <p>ORCID: <a href="https://orcid.org/0000-0002-2223-2414">https://orcid.org/0000-0002-2223-2414</a></p>
-            <p>Official Address: Department of Entrepreneurship, Faculty of Management Studies and Commerce, University of Sri Jayewardenepura, Gangodawila, Nugegoda, Sri Lanka.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Dhanuka Perera. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
